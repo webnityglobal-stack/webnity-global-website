@@ -6,7 +6,7 @@ const App = () => {
  
   return (
      <MainLayout>
-      <Home />
+      <Home/>
     </MainLayout>
   )
 }

@@ -1,13 +1,16 @@
-import React from 'react'
-import Navbar from '../components/layout/Navbar'
-import Footer from '../pages/Footer'
+import Navbar from "../components/layout/Navbar"
+import Footer from "../pages/Footer"
+import React from "react"
+import { Outlet } from "react-router-dom"
 
-const MainLayout = ({ children }) => {
+
+
+const MainLayout = () => {
   return (
     <div>
-       <Navbar />
-      <main>{children}</main>
-      {/* <Footer /> */}
+      <Navbar/>
+      <Outlet />  
+      <Footer/>
     </div>
   )
 }

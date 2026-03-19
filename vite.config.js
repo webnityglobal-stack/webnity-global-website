@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
@@ -8,9 +9,14 @@ export default defineConfig({
   ],
   server: {
     allowedHosts: [
-      '0368-2409-40d2-100e-e51-85fb-ce22-a569-4f15.ngrok-free.app',
+      'unlikened-leonarda-noninflectional.ngrok-free.dev',
       // Or allow all hosts (for development only!)
       'all'
     ]
-  }
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 })
