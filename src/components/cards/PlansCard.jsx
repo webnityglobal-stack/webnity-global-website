@@ -5,8 +5,8 @@ const PlansCard = ({ image, planType, features }) => {
   return (
     <div className="bg-[#050B18] border border-[#438bff] shadow-[#438bff] rounded-2xl md:p-6 p-4 shadow-lg overflow-hidden max-w-md mx-auto">
       {/* Header - SAME for all cards */}
-      <div className="bg-red-700  text-white p-6 text-center rounded-2xl">
-        <img src="/assets/amazon/amazonSpn.png" alt="no image" />
+      <div className="  text-white p-6 text-center rounded-2xl">
+        {/* <img src="/assets/amazon/amazonSpn.png" alt="no image" /> */}
         <h2 className="text-2xl font-bold text-white">SOCIAL MEDIA MARKETING</h2>
         <p className="text-xl mt-2 text-white">{planType}</p>  {/* Brand/Standard/Premium yahan aayega */}
       </div>

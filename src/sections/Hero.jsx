@@ -1,4 +1,3 @@
-import ServiceCards from "../components/cards/Servicecards";
 import FlipCard from "../components/cards/FlipCard";
 import Counter from "../components/common/Country";
 import { motion } from "framer-motion";
@@ -12,6 +11,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useState } from "react";
+import ServiceCards from "@/components/cards/ServiceCards";
 
 
 const Hero = () => {
