@@ -25,18 +25,19 @@ const Navbar = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-[#050B18]">
       <div className=" lg:mx-auto lg:w-auto w-full px-6">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-4 ">
 <div className="flex flex-col ">
   <div className="text-[#438bff] text-2xl font-poppins font-bold">
     <Blurtext text="Webnity Global" />
   </div>
-
+  
   <div className="text-[#438bff] text-sm  font-medium ">
     <Blurtext text="Innovating The Digital Future" />
   </div>
 </div>
 
-          {/* Nav Links */}
+       <div className="flex gap-6 ">
+           {/* Nav Links */}
           <ul className="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-white">
             <li>
               <Link to="/" className="hover:text-[#FF7A00] transition">Home</Link>
@@ -48,7 +49,7 @@ const Navbar = () => {
               <ul className="absolute left-0 top-full shadow-sm shadow-[#FF7A00] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 bg-[#050B18] rounded-md p-4 w-48">
                 <li className="py-1 hover:text-[#FF7A00]">
                   <Link to="/ecommerce/amazon">
-                    Amazon
+                    Amazon 
                   </Link>
                 </li>
                 <li className="py-1 hover:text-[#FF7A00]">
@@ -136,6 +137,7 @@ const Navbar = () => {
             GET CONSULTATION
           </Button>
 
+       </div>
 
           {/* for mobile view */}
           <div className="flex lg:hidden">
@@ -144,7 +146,7 @@ const Navbar = () => {
   <SheetTrigger> <FiAlignRight className="text-[#438bff] text-2xl" /></SheetTrigger>
   <SheetContent className="bg-[#050B18] [&>button]:text-white">
     <SheetHeader>
-      <SheetTitle>Menu</SheetTitle>
+      <SheetTitle className="text-white">Menu</SheetTitle>
       <SheetDescription>
         {/* container */}
         <div >
@@ -159,7 +161,7 @@ const Navbar = () => {
       <li>
         <div
           onClick={() => toggleMenu("ecommerce")}
-          className="flex justify-between items-center cursor-pointer text-[#438bff] font-semibold"
+          className="flex justify-between items-center cursor-pointer text-white font-semibold"
         >
           Ecommerce
           <span>{openMenu === "ecommerce" ? "-" : "+"}</span>
@@ -167,12 +169,12 @@ const Navbar = () => {
 
         {openMenu === "ecommerce" && (
           <ul className="pl-4 mt-2 flex flex-col gap-2">
-            <li><Link to="/ecommerce/amazon">Amazon</Link></li>
-            <li><Link to="/ecommerce/flipkart">Flipkart</Link></li>
-            <li><Link to="/ecommerce/meesho">Meesho</Link></li>
-            <li><Link to="/ecommerce/myntra">Myntra</Link></li>
-            <li><Link to="/ecommerce/nykaa">Nykaa</Link></li>
-            <li><Link to="/ecommerce/quickmarket">QuickMarket</Link></li>
+            <li><Link to="/ecommerce/amazon" className="text-white">Amazon</Link></li>
+            <li><Link to="/ecommerce/flipkart" className="text-white">Flipkart</Link></li>
+            <li><Link to="/ecommerce/meesho" className="text-white">Meesho</Link></li>
+            <li><Link to="/ecommerce/myntra" className="text-white">Myntra</Link></li>
+            <li><Link to="/ecommerce/nykaa" className="text-white">Nykaa</Link></li>
+            <li><Link to="/ecommerce/quickmarket" className="text-white">QuickMarket</Link></li>
           </ul>
         )}
       </li>
@@ -181,7 +183,7 @@ const Navbar = () => {
       <li>
         <div
           onClick={() => toggleMenu("web")}
-          className="flex justify-between items-center cursor-pointer text-[#438bff] font-semibold"
+          className="flex justify-between items-center cursor-pointer text-white font-semibold"
         >
           Web Development
           <span>{openMenu === "web" ? "-" : "+"}</span>
@@ -189,10 +191,10 @@ const Navbar = () => {
 
         {openMenu === "web" && (
           <ul className="pl-4 mt-2 flex flex-col gap-2">
-            <li><Link to="/web/app-design">App Design</Link></li>
-            <li><Link to="/web/web-design">Web Design</Link></li>
-            <li><Link to="/web/crm">CRM</Link></li>
-            <li><Link to="/web/software">Softwares</Link></li>
+            <li><Link to="/web/app-design" className="text-white">App Design</Link></li>
+            <li><Link to="/web/web-design" className="text-white">Web Design</Link></li>
+            <li><Link to="/web/crm" className="text-white">CRM</Link></li>
+            <li><Link to="/web/software" className="text-white">Softwares</Link></li>
           </ul>
         )}
       </li>
@@ -201,7 +203,7 @@ const Navbar = () => {
       <li>
         <div
           onClick={() => toggleMenu("marketing")}
-          className="flex justify-between items-center cursor-pointer text-[#438bff] font-semibold"
+          className="flex justify-between items-center cursor-pointer text-white font-semibold"
         >
           Digital Marketing
           <span>{openMenu === "marketing" ? "-" : "+"}</span>
@@ -209,9 +211,9 @@ const Navbar = () => {
 
         {openMenu === "marketing" && (
           <ul className="pl-4 mt-2 flex flex-col gap-2">
-            <li><Link to="/marketing/google-ads">Google Ads</Link></li>
-            <li><Link to="/marketing/seo">SEO</Link></li>
-            <li><Link to="/marketing/meta-ads">Meta Ads</Link></li>
+            <li><Link to="/marketing/google-ads" className="text-white">Google Ads</Link></li>
+            <li><Link to="/marketing/seo" className="text-white">SEO</Link></li>
+            <li><Link to="/marketing/meta-ads" className="text-white">Meta Ads</Link></li>
           </ul>
         )}
       </li>
@@ -220,7 +222,7 @@ const Navbar = () => {
       <li>
         <div
           onClick={() => toggleMenu("learning")}
-          className="flex justify-between items-center cursor-pointer text-[#438bff] font-semibold"
+          className="flex justify-between items-center cursor-pointer text-white font-semibold"
         >
           Learning
           <span>{openMenu === "learning" ? "-" : "+"}</span>
@@ -228,8 +230,8 @@ const Navbar = () => {
 
         {openMenu === "learning" && (
           <ul className="pl-4 mt-2 flex flex-col gap-2">
-            <li><Link to="/learning/ecommerce" >E-commerce Platform</Link></li>
-            <li><Link to="/learning/digital-marketing">Digital Marketing</Link></li>
+            <li><Link to="/learning/ecommerce" className="text-white">E-commerce Platform</Link></li>
+            <li><Link to="/learning/digital-marketing" className="text-white">Digital Marketing</Link></li>
           </ul>
         )}
       </li>

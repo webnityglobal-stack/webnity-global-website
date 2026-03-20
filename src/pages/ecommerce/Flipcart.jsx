@@ -2,7 +2,7 @@ import React from 'react'
 
 const Flipcart = () => {
   return (
-    <div>
+    <div className='text-red-700'>
       flipcart
     </div>
   )

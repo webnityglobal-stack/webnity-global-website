@@ -1,6 +1,6 @@
 // src/sections/Footer.jsx
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex gap-4 lg:pl-8 lg:col-span-4">
            <div>
              <h2 className="text-2xl font-bold text-[#438bff] mb-4 md:text-2xl md:font-bold md:text-[#438bff] md:mb-4">
-              WEBNITY Global
+              Webnity Global
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               LG-45, Orbit plaza, 201009<br />
@@ -129,7 +129,7 @@ const Footer = () => {
               <span className="w-2 h-2 bg-[#FF7A00] rounded-full animate-pulse"></span>
             </div>
             <p className="text-gray-500 text-sm">
-              ©2025 WEBNITY Global. All rights reserved.
+              ©2025  Webnity Global. All rights reserved.
             </p>
 
 
