@@ -7,10 +7,10 @@ import React from 'react'
 // ✅ Make sure you have a default export
 const Flipcart = () => {
   return (
-    <div className='bg-[#050B18]'> 
+    <div className='bg-[#050B18] '> 
       {/* Your component content */}
-    <div className='p-4'>
-         <div className='text-white text-6xl bg-[#050B18] text-center shadow-lg shadow-[#438bff] p-4'>Flipcart SPN Services</div>
+    <div className='p-4 flex justify-center items-center'>
+         <div className='text-white text-6xl bg-[#050B18] text-center shadow-lg shadow-[#438bff] p-4 inline-block'>Flipkart SPN Services</div>
     </div>
       <div className="grid bg-[#050B18] grid-cols-1 md:grid-cols-3 gap-6 md:p-20 p-8">
         {flipkartSpn.map((plan) => (

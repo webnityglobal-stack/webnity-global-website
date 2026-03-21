@@ -70,6 +70,7 @@ import { amazonSpn } from '@/constants/AmazonSpn'
 import React, { useState } from 'react'
 import Header from './Header'
 import { amazonGlobalSpn } from '@/constants/AmazonGlobalSpn'
+import SalesGraph from '@/components/common/SalesGraph'
 
 const Amazon = () => {
   // ✅ Ek hi state - current active tab ka naam
@@ -89,7 +90,7 @@ const Amazon = () => {
   const currentData = activeTab === 'amazon' ? amazonSpn : amazonGlobalSpn;
 
   return (
-    <div className=''> 
+    <div className='bg-[#050B18]'> 
     
       <Header 
         handleAmazonSpn={handleAmazonSpn}
@@ -105,6 +106,9 @@ const Amazon = () => {
             features={plan.features}
           />
         ))}
+      </div>
+      <div className='p-8'>
+        {/* <SalesGraph/> */}
       </div>
     </div>
   )

@@ -8,6 +8,10 @@ import Contact from "@/pages/Contact"
 import Amazon from "@/pages/ecommerce/Amazon/Amazon"
 import Flipcart from "@/pages/ecommerce/Flipkart/Flipcart"
 import Clients from "@/pages/Clients"
+import Meesho from "@/pages/ecommerce/Meesho"
+import Myntra from "@/pages/ecommerce/Myntra"
+import Nykaa from "@/pages/ecommerce/Nykaa"
+import QuickMarket from "@/pages/ecommerce/QuickMarket"
 
 const AppRoutes = () => {
   return (
@@ -23,6 +27,12 @@ const AppRoutes = () => {
         <Route path="ecommerce/amazon" element={<Amazon />} />
         <Route path="ecommerce/flipkart" element={<Flipcart/>} />
         <Route path= "/clients" element={<Clients/>} />
+        <Route path='/ecommerce/meesho' element={<Meesho/>}/>
+        <Route path='/aboutus' element={<About/>}/>
+        <Route path='/ecommerce/myntra' element= {<Myntra/>}/>
+        <Route path='/ecommerce/nykaa' element={<Nykaa/>}/>
+        <Route path='/quick-market'  element={<QuickMarket/>}/>
+        
       </Route>
 
     </Routes>

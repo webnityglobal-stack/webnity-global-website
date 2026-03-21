@@ -181,12 +181,17 @@ html, body {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Pulse Glow */
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(10, 102, 255, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(255, 122, 0, 0.3); }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
 }
