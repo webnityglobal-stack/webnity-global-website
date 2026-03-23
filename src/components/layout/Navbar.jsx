@@ -144,222 +144,7 @@ const Navbar = () => {
     //       {/* for mobile view */}
     //       <div className="flex lg:hidden">
 
-    //         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-    //   <SheetTrigger>
-    //     <FiAlignRight className="text-[#438bff] text-[40px]" />
-    //   </SheetTrigger>
-    //   <SheetContent className="bg-[#050B18] [&>button]:text-white">
-    //     <SheetHeader>
-    //       <SheetTitle className="text-white">Menu</SheetTitle>
-    //       <SheetDescription>
-    //         {/* container */}
-    //         <div>
-    //           {/* Nav Links */}
-    //           <ul className="flex flex-col gap-5 font-medium text-black mt-6">
-    //             <li>
-    //               <Link to="/" className="text-white" onClick={closeSheet}>
-    //                 Home
-    //               </Link>
-    //             </li>
-
-    //             {/* Ecommerce */}
-    //             <li>
-    //               <div
-    //                 onClick={() => toggleMenu("ecommerce")}
-    //                 className="flex justify-between items-center cursor-pointer text-white font-semibold"
-    //               >
-    //                 Ecommerce
-    //                 <span>{openMenu === "ecommerce" ? "-" : "+"}</span>
-    //               </div>
-
-    //               {openMenu === "ecommerce" && (
-    //                 <ul className="pl-4 mt-2 flex flex-col gap-2">
-    //                   <li>
-    //                     <Link to="/ecommerce/amazon" className="text-white" onClick={closeSheet}>
-    //                       Amazon
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/ecommerce/flipkart" className="text-white" onClick={closeSheet}>
-    //                       Flipkart
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/ecommerce/meesho" className="text-white" onClick={closeSheet}>
-    //                       Meesho
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/ecommerce/myntra" className="text-white" onClick={closeSheet}>
-    //                       Myntra
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/ecommerce/nykaa" className="text-white" onClick={closeSheet}>
-    //                       Nykaa
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/ecommerce/quickmarket" className="text-white" onClick={closeSheet}>
-    //                       QuickMarket
-    //                     </Link>
-    //                   </li>
-    //                 </ul>
-    //               )}
-    //             </li>
-
-    //             {/* Web Development */}
-    //             <li>
-    //               <div
-    //                 onClick={() => toggleMenu("web")}
-    //                 className="flex justify-between items-center cursor-pointer text-white font-semibold"
-    //               >
-    //                 Web Development
-    //                 <span>{openMenu === "web" ? "-" : "+"}</span>
-    //               </div>
-
-    //               {openMenu === "web" && (
-    //                 <ul className="pl-4 mt-2 flex flex-col gap-2">
-    //                   <li>
-    //                     <Link to="/web/app-design" className="text-white" onClick={closeSheet}>
-    //                       App Design
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/web/web-design" className="text-white" onClick={closeSheet}>
-    //                       Web Design
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/web/crm" className="text-white" onClick={closeSheet}>
-    //                       CRM
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/web/software" className="text-white" onClick={closeSheet}>
-    //                       Softwares
-    //                     </Link>
-    //                   </li>
-    //                 </ul>
-    //               )}
-    //             </li>
-
-    //             {/* Digital Marketing */}
-    //             <li>
-    //               <div
-    //                 onClick={() => toggleMenu("marketing")}
-    //                 className="flex justify-between items-center cursor-pointer text-white font-semibold"
-    //               >
-    //                 Digital Marketing
-    //                 <span>{openMenu === "marketing" ? "-" : "+"}</span>
-    //               </div>
-
-    //               {openMenu === "marketing" && (
-    //                 <ul className="pl-4 mt-2 flex flex-col gap-2">
-    //                   <li>
-    //                     <Link to="/marketing/google-ads" className="text-white" onClick={closeSheet}>
-    //                       Google Ads
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/marketing/seo" className="text-white" onClick={closeSheet}>
-    //                       SEO
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/marketing/meta-ads" className="text-white" onClick={closeSheet}>
-    //                       Meta Ads
-    //                     </Link>
-    //                   </li>
-    //                 </ul>
-    //               )}
-    //             </li>
-
-    //             {/* Learning */}
-    //             <li>
-    //               <div
-    //                 onClick={() => toggleMenu("learning")}
-    //                 className="flex justify-between items-center cursor-pointer text-white font-semibold"
-    //               >
-    //                 Learning
-    //                 <span>{openMenu === "learning" ? "-" : "+"}</span>
-    //               </div>
-
-    //               {openMenu === "learning" && (
-    //                 <ul className="pl-4 mt-2 flex flex-col gap-2">
-    //                   <li>
-    //                     <Link to="/learning/ecommerce" className="text-white" onClick={closeSheet}>
-    //                       E-commerce Platform
-    //                     </Link>
-    //                   </li>
-    //                   <li>
-    //                     <Link to="/learning/digital-marketing" className="text-white" onClick={closeSheet}>
-    //                       Digital Marketing
-    //                     </Link>
-    //                   </li>
-    //                 </ul>
-    //               )}
-    //             </li>
-
-    //             <li>
-    //               <Link to="/clients" className="text-white" onClick={closeSheet}>
-    //                 Our Clients
-    //               </Link>
-    //             </li>
-    //             <li>
-    //               <Link to="/about" className="text-white" onClick={closeSheet}>
-    //                 About Us
-    //               </Link>
-    //             </li>
-    //             <li>
-    //               <Link to="/blogs" className="text-white" onClick={closeSheet}>
-    //                 Blogs
-    //               </Link>
-    //             </li>
-    //             <li>
-    //               <Link to="/contact" onClick={closeSheet}>
-    //                 Contact Us
-    //               </Link>
-    //             </li>
-
-    //             <li className="mt-4">
-    //               <Button className="w-full" onClick={closeSheet}>
-    //                <a href="https://wa.me/917303800109?text=Hi%20I%20want%20to%20know%20about%20your%20services"> Get Consultant 🚀</a>
-    //               </Button>
-    //             </li>
-    //           </ul>
-    //         </div>
-    //       </SheetDescription>
-    //     </SheetHeader>
-    //     <SheetFooter>
-    //       <div className="flex flex-col gap-6 mt-6">
-    //         {/* Company Info */}
-    //         <div>
-    //           <h2 className="text-[#438bff] text-xl font-bold">WEBNITY Global</h2>
-    //           <p className="text-sm mt-2 text-gray-400">
-    //             LG-45, Orbit plaza, 201009 <br />
-    //             Lower Ground <br />
-    //             Ghaziabad, Uttar Pradesh <br />
-    //             India
-    //           </p>
-
-    //           <p className="mt-3 text-sm text-gray-400">
-    //             <span className="text-[#438bff]">Phone:</span> +91 7303800109
-    //           </p>
-    //           <p className="text-sm text-gray-400">
-    //             <span className="text-[#438bff]">Email:</span> webnityglobal@gmail.com
-    //           </p>
-    //         </div>
-
-    //         {/* Bottom */}
-    //         <div className="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-    //           <p>Innovating The Digital Future</p>
-    //           <p>©2025 WEBNITY Global. All rights reserved.</p>
-    //         </div>
-    //       </div>
-    //     </SheetFooter>
-    //   </SheetContent>
-    // </Sheet>
+   
 
     //       </div>
 
@@ -457,13 +242,13 @@ const Navbar = () => {
 
             <ul className="absolute left-0 z-50 top-full mt-0 shadow-sm shadow-[#FF7A00] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 bg-[#050B18] rounded-md p-4 w-48">
               <li className="py-1 hover:text-[#FF7A00]">
-                <Link to="/marketing/google-ads">Google Ads</Link>
+                <Link to="/digital-marketing/google-ads">Google Ads</Link>
               </li>
               <li className="py-1 hover:text-[#FF7A00]">
-                <Link to="/marketing/seo">SEO</Link>
+                <Link to="/digital-marketing/seo">SEO</Link>
               </li>
               <li className="py-1 hover:text-[#FF7A00]">
-                <Link to="/marketing/meta-ads">Meta Ads</Link>
+                <Link to="/digital-marketing/meta-ads">Meta Ads</Link>
               </li>
             </ul>
           </li>
@@ -507,13 +292,224 @@ const Navbar = () => {
 
       {/* MOBILE ICON */}
       <div className="flex items-center lg:hidden">
-        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-          <SheetTrigger>
-            <FiAlignRight className="text-[#438bff] text-[34px]" />
-          </SheetTrigger>
+      
+         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+      <SheetTrigger>
+        <FiAlignRight className="text-[#438bff] text-[40px]" />
+      </SheetTrigger>
+      <SheetContent className="bg-[#050B18] [&>button]:text-white">
+        <SheetHeader>
+          <SheetTitle className="text-white">Menu</SheetTitle>
+          <SheetDescription>
+            {/* container */}
+            <div>
+              {/* Nav Links */}
+              <ul className="flex flex-col gap-5 font-medium text-black mt-6">
+                <li>
+                  <Link to="/" className="text-white" onClick={closeSheet}>
+                    Home
+                  </Link>
+                </li>
 
-          {/* rest SAME */}
-        </Sheet>
+                {/* Ecommerce */}
+                <li>
+                  <div
+                    onClick={() => toggleMenu("ecommerce")}
+                    className="flex justify-between items-center cursor-pointer text-white font-semibold"
+                  >
+                    Ecommerce
+                    <span>{openMenu === "ecommerce" ? "-" : "+"}</span>
+                  </div>
+
+                  {openMenu === "ecommerce" && (
+                    <ul className="pl-4 mt-2 flex flex-col gap-2">
+                      <li>
+                        <Link to="/ecommerce/amazon" className="text-white" onClick={closeSheet}>
+                          Amazon
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ecommerce/flipkart" className="text-white" onClick={closeSheet}>
+                          Flipkart
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ecommerce/meesho" className="text-white" onClick={closeSheet}>
+                          Meesho
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ecommerce/myntra" className="text-white" onClick={closeSheet}>
+                          Myntra
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ecommerce/nykaa" className="text-white" onClick={closeSheet}>
+                          Nykaa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ecommerce/quickmarket" className="text-white" onClick={closeSheet}>
+                          QuickMarket
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+
+                {/* Web Development */}
+                <li>
+                  <div
+                    onClick={() => toggleMenu("web")}
+                    className="flex justify-between items-center cursor-pointer text-white font-semibold"
+                  >
+                    Web Development
+                    <span>{openMenu === "web" ? "-" : "+"}</span>
+                  </div>
+
+                  {openMenu === "web" && (
+                    <ul className="pl-4 mt-2 flex flex-col gap-2">
+                      <li>
+                        <Link to="/web/app-design" className="text-white" onClick={closeSheet}>
+                          App Design
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/web/web-design" className="text-white" onClick={closeSheet}>
+                          Web Design
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/web/crm" className="text-white" onClick={closeSheet}>
+                          CRM
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/web/software" className="text-white" onClick={closeSheet}>
+                          Softwares
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+
+                {/* Digital Marketing */}
+                <li>
+                  <div
+                    onClick={() => toggleMenu("marketing")}
+                    className="flex justify-between items-center cursor-pointer text-white font-semibold"
+                  >
+                    Digital Marketing
+                    <span>{openMenu === "marketing" ? "-" : "+"}</span>
+                  </div>
+
+                  {openMenu === "marketing" && (
+                    <ul className="pl-4 mt-2 flex flex-col gap-2">
+                      <li>
+                        <Link to="/digital-marketing/google-ads" className="text-white" onClick={closeSheet}>
+                          Google Ads
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/digital-marketing/seo" className="text-white" onClick={closeSheet}>
+                          SEO
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/digital-marketing/meta-ads" className="text-white" onClick={closeSheet}>
+                          Meta Ads
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+
+                {/* Learning */}
+                <li>
+                  <div
+                    onClick={() => toggleMenu("learning")}
+                    className="flex justify-between items-center cursor-pointer text-white font-semibold"
+                  >
+                    Learning
+                    <span>{openMenu === "learning" ? "-" : "+"}</span>
+                  </div>
+
+                  {openMenu === "learning" && (
+                    <ul className="pl-4 mt-2 flex flex-col gap-2">
+                      <li>
+                        <Link to="/learning/ecommerce" className="text-white" onClick={closeSheet}>
+                          E-commerce Platform
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/learning/digital-marketing" className="text-white" onClick={closeSheet}>
+                          Digital Marketing
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+
+                <li>
+                  <Link to="/clients" className="text-white" onClick={closeSheet}>
+                    Our Clients
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="text-white" onClick={closeSheet}>
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blogs" className="text-white" onClick={closeSheet}>
+                    Blogs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" onClick={closeSheet}>
+                    Contact Us
+                  </Link>
+                </li>
+
+                <li className="mt-4">
+                  <Button className="w-full" onClick={closeSheet}>
+                   <a href="https://wa.me/917303800109?text=Hi%20I%20want%20to%20know%20about%20your%20services"> Get Consultant 🚀</a>
+                  </Button>
+                </li>
+              </ul>
+            </div>
+          </SheetDescription>
+        </SheetHeader>
+        <SheetFooter>
+          <div className="flex flex-col gap-6 mt-6">
+            {/* Company Info */}
+            <div>
+              <h2 className="text-[#438bff] text-xl font-bold">WEBNITY Global</h2>
+              <p className="text-sm mt-2 text-gray-400">
+                LG-45, Orbit plaza, 201009 <br />
+                Lower Ground <br />
+                Ghaziabad, Uttar Pradesh <br />
+                India
+              </p>
+
+              <p className="mt-3 text-sm text-gray-400">
+                <span className="text-[#438bff]">Phone:</span> +91 7303800109
+              </p>
+              <p className="text-sm text-gray-400">
+                <span className="text-[#438bff]">Email:</span> webnityglobal@gmail.com
+              </p>
+            </div>
+
+            {/* Bottom */}
+            <div className="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+              <p>Innovating The Digital Future</p>
+              <p>©2025 WEBNITY Global. All rights reserved.</p>
+            </div>
+          </div>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+
       </div>
 
     </div>

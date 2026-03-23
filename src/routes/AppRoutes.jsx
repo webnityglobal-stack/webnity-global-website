@@ -12,6 +12,8 @@ import Meesho from "@/pages/ecommerce/Meesho"
 import Myntra from "@/pages/ecommerce/Myntra"
 import Nykaa from "@/pages/ecommerce/Nykaa"
 import QuickMarket from "@/pages/ecommerce/QuickMarket"
+import GoogleAds from "@/pages/digitalmarketing/GoogleAds"
+import Seo from "@/pages/digitalmarketing/seo/SEO"
 
 const AppRoutes = () => {
   return (
@@ -32,7 +34,8 @@ const AppRoutes = () => {
         <Route path='/ecommerce/myntra' element= {<Myntra/>}/>
         <Route path='/ecommerce/nykaa' element={<Nykaa/>}/>
         <Route path='/quick-market'  element={<QuickMarket/>}/>
-        
+        <Route path='/digital-marketing/google-ads' element ={<GoogleAds/>}/>
+        <Route path= '//digital-marketing/seo' element = {<Seo/>}/>
       </Route>
 
     </Routes>

@@ -9,7 +9,7 @@ const Meesho = () => {
      <div className='text-white  text-6xl shadow-lg shadow-[#438bff] p-4 text-center w-fit self-center  '>
        Meesho SPN Service
      </div>
-     <div className='flex gap-6 p-8 justify-center  '>
+     <div className='flex flex-col md:flex md:flex-row gap-6 p-8 justify-center  '>
        {
         meeshoSpn.map((plan)=>{
           return <div className=''>

@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="lg:col-span-2">
                 <h3 className="text-white font-semibold mb-4 text-lg whitespace-nowrap">Quick links</h3>
                 <ul className="space-y-3">
-                  {["Pricing", "Resources", "About us", "FAQ", "Contact us"].map((item) => (
+                  {[ "About us", "FAQ", "Contact us"].map((item) => (
                     <li key={item}>
                       <Link
                         to={`/${item.toLowerCase().replace(/\s+/g, '')}`}
@@ -99,7 +99,7 @@ const Footer = () => {
   <h3 className="text-white font-semibold mb-4 text-lg">Legal</h3>
   <ul className="space-y-3">
     {[
-      { name: "Terms of service", path: "/terms" },
+      { name: "Terms & Conditions", path: "/terms" },
       { name: "Privacy policy", path: "/privacy" },
       { name: "Cookie policy", path: "/cookies" }
     ].map((item) => (
